@@ -21,16 +21,16 @@ function Navbar({ logo }) {
                         : "opacity-0 -translate-y-4 pointer-events-none"
                 }`}
             >
-                <a href="" className="text-base font-bold">
+                <a href="" className="text-base font-medium">
                     Home
                 </a>
-                <a href="" className="text-base font-bold">
+                <a href="" className="text-base font-medium">
                     About
                 </a>
-                <a href="" className="text-base font-bold">
+                <a href="" className="text-base font-medium">
                     Projects
                 </a>
-                <a href="" className="text-base font-bold">
+                <a href="" className="text-base font-medium">
                     Contact
                 </a>
             </div>
