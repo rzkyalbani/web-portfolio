@@ -36,21 +36,21 @@ function ProjectCard({ projectImage }) {
                             ReactJS
                         </div>
                     </div>
-                    <button className="flex items-center justify-center gap-1 h-10 w-full bg-white rounded-lg">
+                    <button className="flex items-center justify-center gap-2 h-10 w-full bg-white rounded-lg">
                         <span className="text-zinc-950 text-base font-medium">
                             View Live
                         </span>
-                        <div className="h-6 w-6">
-                            <img src={webIcon} alt="Web Icon" />
-                        </div>
+                        <img src={webIcon} alt="Web Icon" className="h-6 w-6" />
                     </button>
-                    <button className="flex items-center justify-center gap-1 h-10 w-full bg-zinc-950 rounded-lg border border-white">
+                    <button className="flex items-center justify-center gap-2 h-10 w-full bg-zinc-950 rounded-lg border border-white">
                         <span className="text-white text-base font-medium">
                             View Code
                         </span>
-                        <div className="h-6 w-6">
-                            <img src={githubIcon} alt="Web Icon" />
-                        </div>
+                        <img
+                            src={githubIcon}
+                            alt="Web Icon"
+                            className="h-6 w-6"
+                        />
                     </button>
                 </div>
             </div>

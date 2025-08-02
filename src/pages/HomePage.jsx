@@ -1,6 +1,7 @@
 import logo from "../assets/images/logo-dark.png";
 import AboutSection from "../components/AboutSection";
 import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import ProjectsSection from "../components/ProjectsSection";
@@ -15,6 +16,7 @@ function HomePage() {
             <SkillsSection />
             <ProjectsSection />
             <ContactSection />
+            <Footer />
         </div>
     );
 }
