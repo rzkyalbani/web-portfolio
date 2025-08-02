@@ -3,17 +3,21 @@ import ProjectCard from "./ProjectCard";
 
 function ProjectsSection() {
     return (
-        <section className="flex flex-col items-center gap-12 px-8 py-12 w-full h-auto">
-            <div className="flex flex-col gap-2 items-center">
-                <h3 className="text-zinc-950 text-4xl font-bold">
+        <section className="flex h-auto w-full flex-col items-center gap-12 px-8 py-12 md:py-16">
+            <div className="flex flex-col items-center gap-2">
+                <h3 className="text-4xl font-bold text-zinc-950 md:text-5xl">
                     My Projects
                 </h3>
-                <div className="w-24 h-1 bg-zinc-950 rounded-sm"></div>
-                <p className="text-base font-medium text-zinc-500">
+                <div className="h-1 w-24 rounded-sm bg-zinc-950 md:h-2 md:w-32 md:rounded-xs"></div>
+                <p className="text-base font-medium text-zinc-500 md:text-lg">
                     I like building things — and here’s proof.
                 </p>
             </div>
-            <ProjectCard projectImage={placeholder} />
+            <div className="flex flex-wrap items-center justify-center gap-7">
+                <ProjectCard projectImage={placeholder} />
+                <ProjectCard projectImage={placeholder} />
+                <ProjectCard projectImage={placeholder} />
+            </div>
         </section>
     );
 }
