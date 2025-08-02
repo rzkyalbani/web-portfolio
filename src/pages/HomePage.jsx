@@ -2,6 +2,7 @@ import logo from "../assets/images/logo-dark.png";
 import AboutSection from "../components/AboutSection";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
+import SkillsSection from "../components/SkillsSection";
 
 function HomePage() {
     return (
@@ -9,6 +10,7 @@ function HomePage() {
             <Navbar logo={logo} />
             <HeroSection />
             <AboutSection />
+            <SkillsSection />
         </div>
     );
 }
