@@ -2,6 +2,7 @@ import logo from "../assets/images/logo-dark.png";
 import AboutSection from "../components/AboutSection";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
+import ProjectsSection from "../components/ProjectsSection";
 import SkillsSection from "../components/SkillsSection";
 
 function HomePage() {
@@ -11,6 +12,7 @@ function HomePage() {
             <HeroSection />
             <AboutSection />
             <SkillsSection />
+            <ProjectsSection />
         </div>
     );
 }

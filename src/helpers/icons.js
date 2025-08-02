@@ -14,12 +14,12 @@ import figmaIcon from "../assets/icons/material-icon-theme_figma.svg";
 
 const techIcons = [
     {
-        id: 1,
+        id: 0,
         name: "HTML",
         src: htmlIcon,
     },
     {
-        id: 2,
+        id: 1,
         name: "Tailwind CSS",
         src: tailwindIcon,
     },

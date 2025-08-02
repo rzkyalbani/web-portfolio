@@ -13,7 +13,7 @@ function SkillsSection() {
             <div className="flex justify-center items-center flex-wrap py-2 gap-5">
                 {icons.map((i) => (
                     <div
-                        id={i.id}
+                        key={i.id}
                         className="flex flex-col justify-center items-center gap-2 w-24 h-24 border-2 border-zinc-300 rounded-4xl rounded-tl-none"
                     >
                         <img src={i.src} alt={i.name} className="w-11 h-11" />
