@@ -6,64 +6,76 @@ import emailIcon from "../assets/icons/ic_outline-email.svg";
 
 function Footer() {
     return (
-        <footer className="flex flex-col p-9 gap-12 bg-zinc-950">
-            <div className="flex flex-col gap-9">
-                <div className="flex gap-6 items-center">
-                    <img src={logoLight} alt="Logo" className="h-7 w-auto" />
-                    <h4 className="text-xl font-semibold text-white">
-                        Rizky Albani
-                    </h4>
+        <footer className="flex flex-col gap-12 bg-zinc-950 p-9 md:p-16">
+            <div className="flex flex-col gap-9 md:flex-row md:justify-between">
+                <div className="md:flex md:basis-1/2 md:flex-col md:gap-12">
+                    <div className="flex items-center gap-6">
+                        <img
+                            src={logoLight}
+                            alt="Logo"
+                            className="h-7 w-auto"
+                        />
+                        <h4 className="text-xl font-semibold text-white">
+                            Rizky Albani
+                        </h4>
+                    </div>
+                    <p className="hidden text-base text-white md:block">
+                        Laudate omnes gentes laudate <br />
+                        Magnificat in secula <br />
+                        Et anima mea laudate <br />
+                        Magnificat in secula
+                    </p>
                 </div>
-                <div className="flex justify-between">
-                    <div className="flex flex-col gap-4 text-white">
-                        <h4 className="text-xl font-semibold">
+                <div className="flex justify-between md:basis-1/2">
+                    <div className="flex flex-col gap-4 text-white md:gap-8">
+                        <h4 className="text-xl font-semibold md:text-2xl">
                             Site Map
                         </h4>
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-2 md:justify-between md:gap-3 md:text-lg md:font-medium">
                             <a href="">Home</a>
                             <a href="">About</a>
                             <a href="">Projects</a>
                             <a href="">Contact</a>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-4">
-                        <h4 className="text-xl font-semibold text-white">
+                    <div className="flex flex-col gap-4 md:gap-8">
+                        <h4 className="text-xl font-semibold text-white md:text-2xl">
                             Connect
                         </h4>
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-2 md:h-full md:justify-between md:gap-3">
                             <a href="">
                                 <img
                                     src={instagramIcon}
                                     alt="Instagram Link"
-                                    className="h-6 w-6"
+                                    className="h-6 w-6 md:h-7 md:w-7"
                                 />
                             </a>
                             <a href="">
                                 <img
                                     src={githubIcon}
                                     alt="Github Link"
-                                    className="h-6 w-6"
+                                    className="h-6 w-6 md:h-7 md:w-7"
                                 />
                             </a>
                             <a href="">
                                 <img
                                     src={linkedInIcon}
                                     alt="LinkedIn Link"
-                                    className="h-6 w-6"
+                                    className="h-6 w-6 md:h-7 md:w-7"
                                 />
                             </a>
                             <a href="">
                                 <img
                                     src={emailIcon}
                                     alt="Email Link"
-                                    className="h-6 w-6"
+                                    className="h-6 w-6 md:h-7 md:w-7"
                                 />
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <span className="text-white text-xs font-medium">
+            <span className="text-xs font-medium text-white md:text-base">
                 Built with ❤️ using Tailwind & React
             </span>
         </footer>
