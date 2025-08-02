@@ -2,17 +2,19 @@ import paperPlaneIcon from "../assets/icons/fe_paper-plane.svg";
 
 function ContactSection() {
     return (
-        <section className="flex flex-col gap-8 px-8 pt-16 pb-9 w-full bg-zinc-950">
-            <div className="flex flex-col gap-9">
-                <div className="flex flex-col gap-2">
-                    <h3 className="text-white text-4xl font-bold">Contact</h3>
-                    <div className="w-24 h-1 bg-white rounded-sm"></div>
+        <section className="flex w-full flex-col gap-8 bg-zinc-950 px-8 pt-16 pb-9 md:p-16">
+            <div className="flex flex-col gap-9 md:gap-12">
+                <div className="flex flex-col gap-2 md:gap-3">
+                    <h3 className="text-4xl font-bold text-white md:text-5xl">
+                        Contact
+                    </h3>
+                    <div className="h-1 w-24 rounded-sm bg-white md:h-2 md:w-32 md:rounded-xs"></div>
                 </div>
                 <div className="flex flex-col justify-center gap-3">
-                    <h6 className="text-lg font-semibold text-white">
+                    <h6 className="text-lg font-semibold text-white md:text-xl">
                         Got a project idea, a question, or just want to say hi?
                     </h6>
-                    <p className="text-base text-white">
+                    <p className="text-base text-white md:text-lg">
                         I’m always open to new opportunities, interesting
                         discussions, or simple chats about design and
                         development. Feel free to reach out — I’d love to hear
@@ -24,7 +26,7 @@ function ContactSection() {
                 <div>
                     <label
                         htmlFor="name"
-                        className="font-semibold text-base text-white"
+                        className="text-base font-semibold text-white md:text-lg"
                     >
                         Name
                     </label>
@@ -32,13 +34,13 @@ function ContactSection() {
                         type="text"
                         name="name"
                         id="name"
-                        className="rounded-md bg-white w-full h-9 mt-1 px-2"
+                        className="mt-1 block h-10 w-full rounded-md bg-white px-2 md:w-3/4"
                     />
                 </div>
                 <div>
                     <label
                         htmlFor="email"
-                        className="font-semibold text-base text-white"
+                        className="text-base font-semibold text-white md:text-lg"
                     >
                         Email
                     </label>
@@ -46,24 +48,24 @@ function ContactSection() {
                         type="email"
                         name="email"
                         id="email"
-                        className="rounded-md bg-white w-full h-9 mt-1 px-2"
+                        className="mt-1 block h-10 w-full rounded-md bg-white px-2 md:w-3/4"
                     />
                 </div>
                 <div>
                     <label
                         htmlFor="message"
-                        className="font-semibold text-base text-white"
+                        className="text-base font-semibold text-white md:text-lg"
                     >
                         Message
                     </label>
                     <textarea
                         name="message"
                         id="message"
-                        className="rounded-md bg-white w-full h-32 mt-1 px-2"
+                        className="mt-1 block h-36 w-full rounded-md bg-white px-2 md:w-3/4"
                     ></textarea>
                 </div>
-                <button className="flex items-center justify-center gap-2 h-10 w-full bg-zinc-950 rounded-lg border border-white">
-                    <span className="text-white text-base font-medium">
+                <button className="flex h-10 w-full md:w-3/4 items-center justify-center gap-2 rounded-lg border border-white bg-zinc-950 md:h-12">
+                    <span className="text-base font-medium text-white">
                         Send Message
                     </span>
                     <div className="h-5 w-5">
