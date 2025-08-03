@@ -2,7 +2,7 @@ import icons from "../helpers/icons";
 
 function SkillsSection() {
     return (
-        <section className="flex flex-col gap-9 bg-zinc-950 px-8 py-16 xl:px-28 xl:py-24">
+        <section className="flex flex-col gap-9 bg-zinc-950 px-8 py-16 xl:px-28 xl:py-24 2xl:px-56">
             <div className="flex flex-col items-center gap-2 xl:gap-3">
                 <h3 className="text-4xl font-bold text-white md:text-5xl">
                     Tech Stack

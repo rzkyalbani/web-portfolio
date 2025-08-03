@@ -6,7 +6,7 @@ function Navbar({ logo }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="flex h-14 w-full items-center justify-between bg-white px-8 shadow-sm md:h-24 md:px-16 xl:px-28">
+        <nav className="flex h-14 w-full items-center justify-between bg-white px-8 shadow-sm md:h-24 md:px-16 xl:px-28 2xl:px-56">
             <div className="h-7 w-auto md:h-11 xl:h-12">
                 <img src={logo} alt="Logo" className="h-full w-full" />
             </div>

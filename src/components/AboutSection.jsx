@@ -2,7 +2,7 @@ import aboutImg from "../assets/images/about-me.png";
 
 function AboutSection() {
     return (
-        <section className="flex h-auto w-full flex-col items-center gap-6 px-8 pt-7 pb-12 md:p-16 md:pt-12 xl:pt-9 xl:pb-24 xl:px-24">
+        <section className="flex h-auto w-full flex-col items-center gap-6 px-8 pt-7 pb-12 md:p-16 md:pt-12 xl:px-24 xl:pt-9 xl:pb-24 2xl:px-56">
             <div className="flex flex-col items-center gap-2 md:w-full md:items-start md:gap-3">
                 <h3 className="text-4xl font-bold text-zinc-950 md:text-5xl">
                     About Me
@@ -12,13 +12,13 @@ function AboutSection() {
                     A web dev and ui/ux design enthusiast.
                 </p>
             </div>
-            <div className="flex flex-col gap-6 xl:flex-row xl:gap-12 xl:items-center">
+            <div className="flex flex-col gap-6 xl:flex-row xl:items-center xl:gap-12">
                 <img
                     src={aboutImg}
                     alt="About Me"
-                    className="hidden max-w-1/2 md:block xl:max-w-5/12" 
+                    className="hidden max-w-1/2 md:block xl:max-w-5/12"
                 />
-                <div className="flex flex-col gap-6 md:max-w-4/5 md:gap-2 xl:max-w-7/12">
+                <div className="flex flex-col gap-6 md:max-w-4/5 md:gap-2 xl:max-w-7/12 2xl:max-w-5/10">
                     <p className="text-sm text-zinc-700 md:text-base xl:text-lg">
                         I enjoy exploring the JavaScript ecosystem — from
                         building interfaces with React, styling with Tailwind,

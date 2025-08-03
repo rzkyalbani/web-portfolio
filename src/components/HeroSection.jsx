@@ -3,7 +3,7 @@ import arrowDownIcon from "../assets/icons/arrow-down-icon.svg";
 
 function HeroSection() {
     return (
-        <section className="flex h-auto w-full flex-col items-center gap-16 px-8 py-12 md:gap-16 md:px-16 md:py-12 xl:flex-row xl:justify-between xl:px-28 xl:py-24">
+        <section className="flex h-auto w-full flex-col items-center gap-16 px-8 py-12 md:gap-16 md:px-16 md:py-12 xl:flex-row xl:justify-between xl:px-28 xl:py-24 2xl:px-56">
             <div className="h-80 w-80 overflow-hidden rounded-full rounded-bl-none md:h-96 md:w-96 xl:order-2 xl:max-w-5/12 xl:rounded-[200px] xl:rounded-tr-none xl:rounded-bl-none">
                 <img src={heroPic} alt="Hero Image" className="h-full w-full" />
             </div>

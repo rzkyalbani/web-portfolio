@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 function ProjectsSection() {
     return (
-        <section className="flex h-auto w-full flex-col items-center gap-12 px-8 py-12 md:py-16 xl:px-28">
+        <section className="flex h-auto w-full flex-col items-center gap-12 px-8 py-12 md:py-16 xl:px-28 2xl:px-56">
             <div className="flex flex-col items-center gap-2 xl:gap-3">
                 <h3 className="text-4xl font-bold text-zinc-950 md:text-5xl">
                     My Projects
