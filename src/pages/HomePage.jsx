@@ -1,4 +1,4 @@
-import logo from "../assets/images/logo-dark.png";
+import logoDark from "../assets/icons/logo-dark.svg";
 import AboutSection from "../components/AboutSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
@@ -10,7 +10,7 @@ import SkillsSection from "../components/SkillsSection";
 function HomePage() {
     return (
         <div className="flex flex-col gap-0 w-full font-display">
-            <Navbar logo={logo} />
+            <Navbar logo={logoDark} />
             <HeroSection />
             <AboutSection />
             <SkillsSection />

@@ -2,8 +2,8 @@ import paperPlaneIcon from "../assets/icons/fe_paper-plane.svg";
 
 function ContactSection() {
     return (
-        <section className="flex w-full flex-col gap-8 bg-zinc-950 px-8 pt-16 pb-9 md:p-16">
-            <div className="flex flex-col gap-9 md:gap-12">
+        <section className="flex w-full flex-col gap-8 bg-zinc-950 px-8 pt-16 pb-9 md:p-16 xl:flex-row xl:px-28 xl:py-24 xl:justify-between">
+            <div className="flex flex-col gap-9 md:gap-12 xl:max-w-6/12">
                 <div className="flex flex-col gap-2 md:gap-3">
                     <h3 className="text-4xl font-bold text-white md:text-5xl">
                         Contact
@@ -22,7 +22,7 @@ function ContactSection() {
                     </p>
                 </div>
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 xl:min-w-5/12">
                 <div>
                     <label
                         htmlFor="name"
@@ -34,7 +34,7 @@ function ContactSection() {
                         type="text"
                         name="name"
                         id="name"
-                        className="mt-1 block h-10 w-full rounded-md bg-white px-2 md:w-3/4"
+                        className="mt-1 block h-10 w-full rounded-md bg-white px-2 md:w-3/4 xl:w-full"
                     />
                 </div>
                 <div>
@@ -48,7 +48,7 @@ function ContactSection() {
                         type="email"
                         name="email"
                         id="email"
-                        className="mt-1 block h-10 w-full rounded-md bg-white px-2 md:w-3/4"
+                        className="mt-1 block h-10 w-full rounded-md bg-white px-2 md:w-3/4 xl:w-full"
                     />
                 </div>
                 <div>
@@ -61,10 +61,10 @@ function ContactSection() {
                     <textarea
                         name="message"
                         id="message"
-                        className="mt-1 block h-36 w-full rounded-md bg-white px-2 md:w-3/4"
+                        className="mt-1 block h-36 w-full rounded-md bg-white py-2 px-2 md:w-3/4 xl:w-full"
                     ></textarea>
                 </div>
-                <button className="flex h-10 w-full md:w-3/4 items-center justify-center gap-2 rounded-lg border border-white bg-zinc-950 md:h-12">
+                <button className="flex h-10 w-full items-center justify-center gap-2 rounded-lg border border-white bg-zinc-950 md:h-12 md:w-3/4 xl:w-full">
                     <span className="text-base font-medium text-white">
                         Send Message
                     </span>
