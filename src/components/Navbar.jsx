@@ -66,16 +66,32 @@ function Navbar({ logo }) {
                         : "pointer-events-none -translate-y-4 opacity-0"
                 }`}
             >
-                <a href="" className="text-base font-medium">
+                <a
+                    href="#"
+                    className="text-base font-medium"
+                    onClick={() => setIsOpen(false)}
+                >
                     Home
                 </a>
-                <a href="" className="text-base font-medium">
+                <a
+                    href="#about"
+                    className="text-base font-medium"
+                    onClick={() => setIsOpen(false)}
+                >
                     About
                 </a>
-                <a href="" className="text-base font-medium">
+                <a
+                    href="#projects"
+                    className="text-base font-medium"
+                    onClick={() => setIsOpen(false)}
+                >
                     Projects
                 </a>
-                <a href="" className="text-base font-medium">
+                <a
+                    href="#contact"
+                    className="text-base font-medium"
+                    onClick={() => setIsOpen(false)}
+                >
                     Contact
                 </a>
             </div>
