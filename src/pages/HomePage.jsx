@@ -6,17 +6,32 @@ import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import ProjectsSection from "../components/ProjectsSection";
 import SkillsSection from "../components/SkillsSection";
+import RevealOnScroll from "../components/RevealOnScroll";
 
 function HomePage() {
     return (
-        <div className="flex flex-col gap-0 w-full font-display">
-            <Navbar logo={logoDark} />
-            <HeroSection />
-            <AboutSection />
-            <SkillsSection />
-            <ProjectsSection />
-            <ContactSection />
-            <Footer />
+        <div className="font-display flex w-full flex-col gap-0">
+            <RevealOnScroll>
+                <Navbar logo={logoDark} />
+            </RevealOnScroll>
+            <RevealOnScroll>
+                <HeroSection />
+            </RevealOnScroll>
+            <RevealOnScroll>
+                <AboutSection />
+            </RevealOnScroll>
+            <RevealOnScroll>
+                <SkillsSection />
+            </RevealOnScroll>
+            <RevealOnScroll>
+                <ProjectsSection />
+            </RevealOnScroll>
+            <RevealOnScroll>
+                <ContactSection />
+            </RevealOnScroll>
+            <RevealOnScroll>
+                <Footer />
+            </RevealOnScroll>
         </div>
     );
 }

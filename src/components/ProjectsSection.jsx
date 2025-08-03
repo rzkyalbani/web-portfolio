@@ -1,6 +1,3 @@
-import placeholder from "../assets/images/default-image-food.png";
-import ProjectCard from "./ProjectCard";
-
 function ProjectsSection() {
     return (
         <section
@@ -17,7 +14,7 @@ function ProjectsSection() {
                 </p>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-7 xl:gap-16">
-                <div className="animate-pulse py-20 text-center text-3xl md:text-5xl text-zinc-600 italic xl:py-48 xl:text-7xl">
+                <div className="animate-pulse py-20 text-center text-3xl text-zinc-600 italic md:text-5xl xl:py-48 xl:text-7xl">
                     Preparing awesome projects...
                 </div>
             </div>
