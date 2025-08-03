@@ -31,14 +31,18 @@ function Navbar({ logo }) {
             </div>
 
             {/* Desktop CTA Button */}
-            <button className="hidden h-10 cursor-pointer items-center rounded-lg bg-zinc-950 md:flex md:gap-1 md:px-5 xl:h-12 xl:px-6 gap-1">
-                <span className="text-base font-medium text-white xl:text-lg">Resume</span>
-                <img
-                    src={arrrowDownIcon}
-                    alt="Download Icon"
-                    className="h-5 w-5 xl:h-7 xl:w-7"
-                />
-            </button>
+            <a href="/my-cv.pdf" download={true}>
+                <button className="hidden h-10 cursor-pointer items-center gap-1 rounded-lg bg-zinc-950 md:flex md:gap-1 md:px-5 xl:h-12 xl:px-6">
+                    <span className="text-base font-medium text-white xl:text-lg">
+                        Resume
+                    </span>
+                    <img
+                        src={arrrowDownIcon}
+                        alt="Download Icon"
+                        className="h-5 w-5 xl:h-7 xl:w-7"
+                    />
+                </button>
+            </a>
 
             {/* Mobile menu */}
             <div

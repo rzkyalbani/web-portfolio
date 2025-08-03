@@ -22,18 +22,18 @@ function HeroSection() {
                         designs into meaningful digital experiences.
                     </p>
                 </div>
-                <button className="flex h-12 w-full items-center justify-center gap-1 rounded-lg bg-zinc-950 md:w-fit md:px-7 xl:px-6">
-                    <span className="text-base font-medium text-white">
-                        Download CV
-                    </span>
-                    <button className="h-5 w-5 xl:h-7 xl:w-7 cursor-pointer">
+                <a href="/my-cv.pdf" download={true}>
+                    <button className="flex h-12 w-full cursor-pointer items-center justify-center gap-1 rounded-lg bg-zinc-950 md:w-fit md:px-7">
+                        <span className="text-base font-medium text-white 2xl:text-lg">
+                            Download CV
+                        </span>
                         <img
                             src={arrowDownIcon}
                             alt="arrow-down-icon"
-                            className="h-full w-full"
+                            className="h-5 w-5 xl:h-7 xl:w-7"
                         />
                     </button>
-                </button>
+                </a>
             </div>
         </section>
     );
