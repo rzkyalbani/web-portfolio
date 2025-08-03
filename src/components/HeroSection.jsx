@@ -23,7 +23,7 @@ function HeroSection() {
                     </p>
                 </div>
                 <a href="/my-cv.pdf" download={true}>
-                    <button className="flex h-12 w-full cursor-pointer items-center justify-center gap-1 rounded-lg bg-zinc-950 md:w-fit md:px-7">
+                    <button className="flex h-12 w-full cursor-pointer items-center justify-center gap-1 rounded-lg bg-zinc-950 hover:bg-zinc-700 md:w-fit md:px-7 xl:h-12">
                         <span className="text-base font-medium text-white 2xl:text-lg">
                             Download CV
                         </span>

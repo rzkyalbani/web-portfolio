@@ -13,6 +13,7 @@ function ContactSection() {
 
     const [resultMessage, setResultMessage] = useState("");
     const [isSuccess, setIsSuccess] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const closePopup = () => {
         setResultMessage("");
@@ -27,6 +28,7 @@ function ContactSection() {
 
     const onSubmit = async (e) => {
         e.preventDefault();
+        setIsSubmitting(true);
         const finalFormData = new FormData();
 
         Object.keys(formData).forEach((key) => {
@@ -61,6 +63,8 @@ function ContactSection() {
         } catch (e) {
             console.log(e);
             setResultMessage("An error occurred while sending the message.");
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -98,7 +102,7 @@ function ContactSection() {
                             alt="Check Icon"
                             className="h-8 w-8"
                         />
-                        <span className="text-sm font-bold text-zinc-950">
+                        <span className="text-sm font-semibold text-zinc-950">
                             {resultMessage}
                         </span>
                     </div>
@@ -163,14 +167,23 @@ function ContactSection() {
                 </div>
                 <button
                     type="submit"
-                    className="flex h-10 w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-white bg-zinc-950 md:h-12 md:w-3/4 xl:w-full"
+                    className="flex h-10 w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-white bg-zinc-950 hover:bg-zinc-800 md:h-12 md:w-3/4 xl:w-full"
+                    disabled={isSubmitting}
                 >
-                    <span className="text-base font-medium text-white">
-                        Send Message
-                    </span>
-                    <div className="h-5 w-5">
-                        <img src={paperPlaneIcon} alt="Sent Icon" />
-                    </div>
+                    {!isSubmitting ? (
+                        <>
+                            <span className="text-base font-medium text-white">
+                                Send Message
+                            </span>
+                            <div className="h-5 w-5">
+                                <img src={paperPlaneIcon} alt="Sent Icon" />
+                            </div>
+                        </>
+                    ) : (
+                        <span className="text-base font-medium text-white">
+                            Sending Message...
+                        </span>
+                    )}
                 </button>
             </form>
         </section>

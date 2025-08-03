@@ -8,7 +8,9 @@ function Navbar({ logo }) {
     return (
         <nav className="flex h-14 w-full items-center justify-between bg-white px-8 shadow-sm md:h-24 md:px-16 xl:px-28 2xl:px-56">
             <div className="h-7 w-auto md:h-11 xl:h-12">
-                <img src={logo} alt="Logo" className="h-full w-full" />
+                <a href="">
+                    <img src={logo} alt="Logo" className="h-full w-full" />
+                </a>
             </div>
             <div className="md:hidden">
                 <Hamburger isOpen={isOpen} toggle={() => setIsOpen(!isOpen)} />
@@ -16,23 +18,23 @@ function Navbar({ logo }) {
 
             {/* Desktop link */}
             <div className="hidden md:flex md:items-center md:gap-7 xl:gap-12">
-                <a href="" className="text-base font-medium text-zinc-950">
+                <a href="" className="text-base font-medium text-zinc-950 hover:text-zinc-700">
                     Home
                 </a>
-                <a href="" className="text-base font-medium text-zinc-950">
+                <a href="" className="text-base font-medium text-zinc-950 hover:text-zinc-700">
                     About
                 </a>
-                <a href="" className="text-base font-medium text-zinc-950">
+                <a href="" className="text-base font-medium text-zinc-950 hover:text-zinc-700">
                     Projects
                 </a>
-                <a href="" className="text-base font-medium text-zinc-950">
+                <a href="" className="text-base font-medium text-zinc-950 hover:text-zinc-700">
                     Contact
                 </a>
             </div>
 
             {/* Desktop CTA Button */}
             <a href="/my-cv.pdf" download={true}>
-                <button className="hidden h-10 cursor-pointer items-center gap-1 rounded-lg bg-zinc-950 md:flex md:gap-1 md:px-5 xl:h-12 xl:px-6">
+                <button className="hidden h-10 cursor-pointer items-center gap-1 rounded-lg bg-zinc-950 hover:bg-zinc-700 md:flex md:gap-1 md:px-5 xl:h-12 xl:px-6">
                     <span className="text-base font-medium text-white xl:text-lg">
                         Resume
                     </span>

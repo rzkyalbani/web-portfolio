@@ -36,13 +36,13 @@ function ProjectCard({ projectImage }) {
                             ReactJS
                         </div>
                     </div>
-                    <button className="flex h-10 w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-white xl:h-12">
+                    <button className="flex h-10 w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-white xl:h-12 hover:bg-zinc-100">
                         <span className="text-base font-medium text-zinc-950">
                             View Live
                         </span>
                         <img src={webIcon} alt="Web Icon" className="h-6 w-6" />
                     </button>
-                    <button className="flex h-10 w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-white bg-zinc-950 xl:h-12">
+                    <button className="flex h-10 w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-white bg-zinc-950 xl:h-12 hover:bg-zinc-800">
                         <span className="text-base font-medium text-white">
                             View Code
                         </span>
