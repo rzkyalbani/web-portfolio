@@ -2,7 +2,10 @@ import aboutImg from "../assets/images/about-me.png";
 
 function AboutSection() {
     return (
-        <section className="flex h-auto w-full flex-col items-center gap-6 px-8 pt-7 pb-12 md:p-16 md:pt-12 xl:px-24 xl:pt-9 xl:pb-24 2xl:px-56">
+        <section
+            id="about"
+            className="flex h-auto w-full flex-col items-center gap-6 px-8 pt-7 pb-12 md:p-16 md:pt-12 xl:px-24 xl:pt-9 xl:pb-24 2xl:px-56"
+        >
             <div className="flex flex-col items-center gap-2 md:w-full md:items-start md:gap-3">
                 <h3 className="text-4xl font-bold text-zinc-950 md:text-5xl">
                     About Me

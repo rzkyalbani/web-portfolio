@@ -32,10 +32,18 @@ function Footer() {
                             Site Map
                         </h4>
                         <div className="md:font-base flex h-full flex-col gap-2 md:justify-between md:gap-3 md:text-lg xl:text-xl">
-                            <a href="">Home</a>
-                            <a href="">About</a>
-                            <a href="">Projects</a>
-                            <a href="">Contact</a>
+                            <a href="#" className="hover:text-zinc-300">
+                                Home
+                            </a>
+                            <a href="#about" className="hover:text-zinc-300">
+                                About
+                            </a>
+                            <a href="#projects" className="hover:text-zinc-300">
+                                Projects
+                            </a>
+                            <a href="#contact" className="hover:text-zinc-300">
+                                Contact
+                            </a>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4 md:gap-8">
@@ -43,28 +51,32 @@ function Footer() {
                             Connect
                         </h4>
                         <div className="flex flex-col gap-2 md:h-full md:justify-between md:gap-3">
-                            <a href="">
+                            <a href="https://www.instagram.com/rzkyalbani/">
                                 <img
                                     src={instagramIcon}
                                     alt="Instagram Link"
                                     className="h-6 w-6 md:h-7 md:w-7 xl:h-8 xl:w-8"
                                 />
                             </a>
-                            <a href="">
+                            <a href="https://github.com/rzkyalbani">
                                 <img
                                     src={githubIcon}
                                     alt="Github Link"
                                     className="h-6 w-6 md:h-7 md:w-7 xl:h-8 xl:w-8"
                                 />
                             </a>
-                            <a href="">
+                            <a href="https://www.linkedin.com/in/rizky-albani-1ba67b297/">
                                 <img
                                     src={linkedInIcon}
                                     alt="LinkedIn Link"
                                     className="h-6 w-6 md:h-7 md:w-7 xl:h-8 xl:w-8"
                                 />
                             </a>
-                            <a href="">
+                            <a
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=rzkyalbani@gmail.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <img
                                     src={emailIcon}
                                     alt="Email Link"

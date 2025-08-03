@@ -18,16 +18,16 @@ function Navbar({ logo }) {
 
             {/* Desktop link */}
             <div className="hidden md:flex md:items-center md:gap-7 xl:gap-12">
-                <a href="" className="text-base font-medium text-zinc-950 hover:text-zinc-700">
+                <a href="#" className="text-base font-medium text-zinc-950 hover:text-zinc-700">
                     Home
                 </a>
-                <a href="" className="text-base font-medium text-zinc-950 hover:text-zinc-700">
+                <a href="#about" className="text-base font-medium text-zinc-950 hover:text-zinc-700">
                     About
                 </a>
-                <a href="" className="text-base font-medium text-zinc-950 hover:text-zinc-700">
+                <a href="#projects" className="text-base font-medium text-zinc-950 hover:text-zinc-700">
                     Projects
                 </a>
-                <a href="" className="text-base font-medium text-zinc-950 hover:text-zinc-700">
+                <a href="#contact" className="text-base font-medium text-zinc-950 hover:text-zinc-700">
                     Contact
                 </a>
             </div>

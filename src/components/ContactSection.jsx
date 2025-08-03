@@ -69,7 +69,10 @@ function ContactSection() {
     };
 
     return (
-        <section className="flex w-full flex-col gap-8 bg-zinc-950 px-8 pt-16 pb-9 md:p-16 xl:flex-row xl:justify-between xl:px-28 xl:py-24 2xl:px-56">
+        <section
+            id="contact"
+            className="flex w-full flex-col gap-8 bg-zinc-950 px-8 pt-16 pb-9 md:p-16 xl:flex-row xl:justify-between xl:px-28 xl:py-24 2xl:px-56"
+        >
             <div className="flex flex-col gap-9 md:gap-12 xl:max-w-6/12">
                 <div className="flex flex-col gap-2 md:gap-3">
                     <h3 className="text-4xl font-bold text-white md:text-5xl">
