@@ -45,7 +45,7 @@ function Navbar({ logo }) {
             </div>
 
             {/* Desktop CTA Button */}
-            <a href="/my-cv.pdf" className="hidden" download={true}>
+            <a href="/my-cv.pdf" className="hidden md:block" download={true}>
                 <button className="h-10 cursor-pointer items-center gap-1 rounded-lg bg-zinc-950 hover:bg-zinc-700 md:flex md:gap-1 md:px-5 xl:h-12 xl:px-6">
                     <span className="text-base font-medium text-white xl:text-lg">
                         Resume
